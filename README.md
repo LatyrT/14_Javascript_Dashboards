@@ -14,7 +14,7 @@ This project was created and authored by:
 
 ## **2. Requirements / Specifications**
 
-The [business & technical requirements](000-Instructions) that must be met by the solution.
+The [business & technical requirements](001-Instructions) that must be met by the solution.
 
 ## **3. Prerequisites**
 
@@ -65,15 +65,15 @@ The code is available as follows:
 * Open VS Code or your IDE
 * Choose 'File > Open Folder'
 * Select the path to the folder located 1 level above the folder where the [HTML](index.html) is located. 
-    * * Example if your index file is located: Documents/.../Folder_Level_1_Above/14_Belly_Button_Diversity_JavaScript
-    * * Select: Folder_Level_1_Above
+    * Example if your index file is located: Documents/.../Folder_Level_1_Above/14_Belly_Button_Diversity_JavaScript
+    * Select: Folder_Level_1_Above
 * Right click the folder that contains your [HTML](index.html), it should be named: 14_Belly_Button_Diversity_JavaScript
 * Select: Open in integrated terminal
 * It should open the terminal
 * In the terminal do the following:
-    * * Type the command 'conda activate Your_Environment_Name' ; Your_Environment_Name is the name of your Python environment you defined
-    * * Run the server by typing the following: 'Python -m http.server'
-    * * Then, copy/paste this url (http://localhost:8000/) into your browser and press enter
+    * Type the command 'conda activate Your_Environment_Name' ; Your_Environment_Name is the name of your Python environment you defined
+    * Run the server by typing the following: 'Python -m http.server'
+    * Then, copy/paste this url (http://localhost:8000/) into your browser and press enter
 * The page should load the charts and you can now selection menu or dropdown list to show the desired information
 * Don't forget to shut down the server by closing your Python terminal in VS Code
 
@@ -94,9 +94,6 @@ See related document to learn more about acceptence criteria:
 The outcome should be similar to the below:
 
 <p align="center">
-  <img src="Example_Query.png">
+  <img src="charts_result.png">
 </p> 
 
-<p align="center">
-  <img src="Example_Query_bis.png">
-</p> 
