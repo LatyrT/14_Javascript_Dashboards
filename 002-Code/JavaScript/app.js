@@ -1,5 +1,5 @@
 function loadData(ld) {
-    d3.json("../Sample/samples.json").then (rawData =>{
+    d3.json("./002-Code/Sample/samples.json").then (rawData =>{
 
         // Create useful datasets
         var allData = rawData;
@@ -88,7 +88,9 @@ function loadData(ld) {
 
 
 
+            /////==========================
             //////// Create bar chart
+            /////==========================
             var trace = {
                 x: sampleValues,
                 y: otuId,
@@ -108,7 +110,11 @@ function loadData(ld) {
     
             Plotly.newPlot("bar-chart", data, layout); // create the bar plot
 
+
+            
+            /////==========================
             ////// Gauge chart
+            /////==========================
             var gaugeData = [{
                 domain: {
                     x: otuId, 
@@ -143,15 +149,17 @@ function loadData(ld) {
 
             
             var gaugeLayout = {
-                width: 400, 
+                width: 300, 
                 height: 600,  
-                margin: {t: 0, b: 300}
+                margin: {t:0, b:200, r:0, l:0}
             };
 
             Plotly.newPlot("gauge-chart", gaugeData, gaugeLayout);
 
 
+            /////==========================
             ///// Create bubble chart
+            /////==========================
             var trace1 = {
                 x: otuIdInt,
                 y: sampleValuesAll,
@@ -171,12 +179,12 @@ function loadData(ld) {
                     text: "Bubble Chart - OTU Sample Values "
                 },
                 height:800,
-                width: 1300,
-                margin: {
-                    t: 50, 
-                    b: -300,
-                    l: 500
-                }
+                //width: 700 //,
+                //margin: {
+                     //t: 50//, 
+                     //b: -300,
+                     //l: 300
+                //}
 
             };
     
