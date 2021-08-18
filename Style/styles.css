@@ -1,11 +1,32 @@
-#page-footer {
-    width: 100%;
-    height: 50px;
-    background-color: black;
-    color: white;
-    text-align: center;
-  }
 
-  #separator {
-    height: 800px;
-  }
+.row {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#image_1 {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+
+#bubble-chart
+ {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: auto;
+  padding-right:auto;
+  width: 90%;
+  position: relative;
+} 
+
+  
+
+
