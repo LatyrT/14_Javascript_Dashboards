@@ -2,39 +2,53 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bellybutton Biodiversity</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./Style/styles.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Bellybutton Biodiversity</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="./Style/styles.css">
 </head>
+
+
 
 <body>
   <!-- ******************************-->
   <!-- ********* Header *************-->
   <!-- ******************************-->
   <header>
-    <div class="container-fluid">
-      <section class="row">
-        <div class="col-md-12 jumbotron text-center">
-          <h1>Belly Button Biodiversity Dashboard</h1>
-          <p>Use the interactive charts below to explore the dataset</p>
+    <section >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="jumbotron text-center">
+              <h1>Belly Button Biodiversity Dashboard</h1>
+              <p>Use the interactive charts below to explore the dataset</p>
+            </div>
+          </div>
+          
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </header>
 
 
   <!-- ******************************-->
-  <!-- *********  Main  *************-->
+  <!-- ***********Main***************-->
   <!-- ******************************-->
   <main>
-    <div class="container-fluid">
-      <section>
+    <section>
+      <div class="container">
+      </div>
+      <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-12">
+            <img id="image_1" src="bacteria.jpg">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
             <div class="well">
               <h5>Test Subject ID No.:</h5>
               <!-- <select id="selDataset" onchange="optionChanged(this.value)" ></select> -->
@@ -44,48 +58,63 @@
               <div class="panel-heading">
                 <h3 class="panel-title">Demographic Info</h3>
               </div>
-              <div id="sample-metadata" class="panel-body">
-
-              </div>
+              <div id="sample-metadata" class="panel-body"> </div>
             </div>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-4">
             <div id="bar-chart"></div>
           </div>
           <div class="col-md-4">
-            <div id="gauge-chart"></div>
+            <div id="gauge-chart" class="center" ></div>
           </div>
         </div>
-      </section>
-      
-      <section>
-        <div class="row">
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class ="row">
           <div class="col-md-12">
-            <div id="bubble-chart"></div>
+            <div id="bubble-chart"></div>              
           </div>
         </div>
-      </section>
-
-      <section>
-        <div id="separator">
-
-        </div>
-
-      </section>
-    </div>
+      </div>
+    </section>
+    <br>
   </main>
 
-    
-
   <!-- ******************************-->
-  <!-- *********  Footer  ***********-->
+  <!-- ***********Footer*************-->
   <!-- ******************************-->
   <footer>
-    <div class="container-fluid" id='page-footer'>
-      <p>Copyright Latyr 06-2020</p>
-    </div>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="jumbotron text-center">
+              <h3> <strong> 
+                Copyright ©  Latyr | September, 2020
+              </strong></h3>
+              <p id="contact-info"> 
+                <a> <strong> Contact: </strong>  </a>
+                <a href="mailto: latyr.kwasi.thiao@gmail.com">
+                  <strong> latyr.kwasi.thiao@gmail.com  </strong>
+                </a>
+                <a> | </a>
+                <a href="https://linkedin.com/in/latyrkthiao" target="blank"> <strong> LinkedIn </strong></a>
+                <a> | </a>
+                <a href="https://github.com/LatyrT" target="blank"> <strong> GitHub </strong> </a>
+                <a> | </a>
+                <a href="https://public.tableau.com/profile/latyr#!/" target="blank"> <strong> Tableau </strong> </a>
+              </p>
+              <p id="location">
+                <strong> Toronto, ON </strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </footer>
-    
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
@@ -93,5 +122,4 @@
   <script src="./JavaScript/app.js"></script>
 
 </body>
-
 </html>
